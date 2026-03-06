@@ -1,0 +1,67 @@
+.url-input-container {
+  margin-bottom: 1.5rem;
+}
+
+.url-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+}
+
+.url-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.url-icon {
+  position: absolute;
+  left: 1rem;
+  color: #a0aec0;
+  pointer-events: none;
+}
+
+.url-input {
+  width: 100%;
+  padding: 1rem 1rem 1rem 3rem;
+  font-size: 1.125rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.url-input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.url-input:disabled {
+  background: #f7fafc;
+  cursor: not-allowed;
+}
+
+.url-clear {
+  position: absolute;
+  right: 0.75rem;
+  padding: 0.5rem;
+  border: none;
+  background: #f7fafc;
+  color: #a0aec0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.url-clear:hover:not(:disabled) {
+  background: #fed7d7;
+  color: #c53030;
+}
+
+.url-clear:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
