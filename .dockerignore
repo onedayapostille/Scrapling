@@ -17,6 +17,8 @@ __pycache__/
 .build
 .ve
 .env
+.env.*
+!.env.example
 .pytest
 .benchmarks
 .bootstrap
@@ -108,3 +110,13 @@ output/*/index.html
 docs/_build
 public/
 web/
+
+# Node modules
+node_modules/
+
+# Logs
+*.log
+
+# Crawl data
+crawl_data/
+*.tmp
